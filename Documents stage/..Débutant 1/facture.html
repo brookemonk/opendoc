@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturation</title>
+    <link rel="stylesheet" type="text/css" href="facture.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Facture</h2>
+        <p>Bienvenue chez les nous !</p>
+    </div>
+
+    <div class="link">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </div>
+
+    <div class="main">
+        <div class="fournisseur">
+            <h3>Fournisseur</h3>
+            <fieldset>
+                <legend>
+                    <label for="Fournisseur">Fournisseur : ?</label>
+                </legend>
+                <select name="Fournisseur " id="Fournisseur ">
+                <option value="">Fournisseur 1 </option>
+                <option value="">Fournisseur 2 </option>
+                <option value="">Fournisseur 3 </option>
+                </select>
+            </fieldset>
+        </div>
+
+
+        <div class="formulaire">
+            <h3>Formulaire</h3>
+            <fieldset>
+                <legend>
+                    <p id="info">Information : ?</p>
+                </legend>
+            <section>
+                <div>
+                    <input type="radio" id="Personnel"
+                    name="Information" value="Personnel" checked>
+                    <label for="Personnel">Personnel</label>
+                
+                    <input type="radio" id="Pro"
+                    name="Information" value="Pro" >
+                    <label for="Pro">Professionel</label>
+                </div>
+            </section>
+            <br>
+            <label for="N°TVA">N°TVA:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="Prénom">Prénom:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="Nom">Nom:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <section>
+            <div>
+                <input type="radio" id="Personnel"
+                name="sexe" value="Personnel" checked>
+                <label for="Personnel">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="Pro"
+                name="sexe" value="Pro" >
+            <label for="Pro">Female</label>
+            </div>
+            <div>
+                <input type="radio" id="Pro"
+                name="sexe" value="Pro" >
+            <label for="Pro">Other</label>
+            </div>
+            </section>
+            <br>
+            <label for="Email">Email:</label><br>
+            <input type="email" id="name" name="name"><br><br>
+            <label for="N°Téléphone">N°Téléphone:</label><br>
+            <input type="tel" id="name" name="name"><br><br>
+            <label for="Adresse">Adresse:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="Région">Région:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="Ville">Ville:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="Code postale">Code postale:</label>
+            <input type="number" id="name" name="name">
+            <br>
+            <br>
+            <label for="Carte de paiement">Carte de paiement:</label>
+            <input type="number" id="name" name="name">
+            <br>
+            <button type="button" class="valider-button">Valider</button> 
+            <button type="button" class="Réinitialiser-button">Réinitialiser</button> 
+            </fieldset>
+        </div>
+    </div>
+</body>
+<footer>
+    <p id="footer">K CORP</p>
+</footer>
+</html>

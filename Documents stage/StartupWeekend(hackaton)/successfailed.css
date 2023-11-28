@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Cabo Rounded Regular";
+    src: url("./police/Cabo-Rounded-Regular.otf") format("opentype");
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #hassoul {
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 300px;
+
+}
+
+.sousdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#up {
+    padding-top: 60px;
+}
+
+img {
+    width: 75px;
+
+}
+
+p {
+    margin: 0;
+    font-family: "Cabo Rounded Regular";
+    color: (75, 75, 75);
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+a p {
+    background-color: #0a6f57;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: medium;
+    color: white;
+    bottom: 25px;
+}
+
+a p:hover {
+    background-color: #07503f;
+}

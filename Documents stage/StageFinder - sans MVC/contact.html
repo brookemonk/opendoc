@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact / Stage Finders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/image/logofull.png">
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <img src="./assets/image/logotop.png" alt="img-logo"
+                onClick="Javascript:window.location.href='homelogged.html';">
+        </div>
+        <div class="right">
+            <img src="./assets/image/search.png" alt="img-search"
+                onClick="Javascript:window.location.href='search.html';">
+            <img src="./assets/image/folder.png" alt="img-files"
+                onClick="Javascript:window.location.href='folder.html';">
+            <img src="./assets/image/profil.png" alt="img-profil"
+                onClick="Javascript:window.location.href='profil.html';">
+            <img src="./assets/image/menu.png" alt="img-menu" class="expand-menu" onclick="openMenu()">
+        </div>
+    </header>
+
+    <div id="sideMenuTuteur" class="sidemenututeur">
+        <ul>
+            <li><img src="./assets/image/cross.png" alt="img-close" class="close-menu" onclick="closeMenu()"></li>
+            <li><a href="#">Accueil </a></li>
+            <li><a href="#">Gestion Entreprise </a></li>
+            <li><a href="#">Gestion Elèves </a></li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4747.35225032418!2d-1.1484548354454784!3d46.18446965899725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48015321d669aa57%3A0xf1bacfa2a4c97eb3!2s8%20Rue%20Isabelle%20Autissier%2C%2017140%20Lagord!5e0!3m2!1sfr!2sfr!4v1679495624289!5m2!1sfr!2sfr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="admin">
+            <div class="column1_contact">
+                <div class="header_admin">
+                    <img src="./assets/image/profil-m.png" alt="Profil">
+                </div>
+                <div class="body_admin">
+                    <h4>BLET Baptiste</h4>
+                    <p>Designer et Développeur Full Stack</p>
+                    <a href="mailto:baptiste.blet@viacesi.fr">Contactez-moi</a>
+                </div>
+            </div>
+            <div class="column2_contact">
+                <div class="header_admin">
+                    <img src="./assets/image/profil-w.png" alt="Profil">
+                </div>
+                <div class="body_admin">
+                    <h4>MEZIANE Anaïs</h4>
+                    <p>Développeuse Full Stack</p>
+                    <a href="mailto:anais.mezianebettahar@viacesi.fr">Contactez-moi</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="toflex">
+            <img src="./assets/image/logo.png" alt="Logo Home">
+            <h1>Stage Finder</h1>
+            <div class="socialmedia">
+                <a
+                    href="https://www.facebook.com/CESIingenieurs/?_ga=2.193676973.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/fb.png" alt="facebook">
+                </a>
+                <a
+                    href="https://www.instagram.com/cesi_officiel/?_ga=2.125329674.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/insta.png" alt="instagram">
+                </a>
+                <a
+                    href="https://www.linkedin.com/school/cesi-officiel/?_ga=2.225568026.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/ln.png" alt="linkedin">
+                </a>
+                <a href="https://twitter.com/cesi_officiel?_ga=2.225568026.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/twi.png" alt="twitter">
+                </a>
+                <a
+                    href="https://www.youtube.com/user/groupecesi1/?_ga=2.225568026.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/yt.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div class="footerlinks">
+            <a href="./mention_legales.html">MENTIONS</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./apropos.html">A PROPOS</a>
+            <a href="./cookie.html">COOKIES</a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+/*/////////////////////////////////////*/
+h2 {
+    margin: 0;
+}
+
+.search-icon i {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.search-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+input {
+    width: 400px;
+    border-radius: 1000px;
+    border-style: solid;
+    border: 1px grey;
+    padding: 7px;
+}
+
+
+.search-input {
+    padding-right: 30px;
+    background-image: url('chemin_vers_votre_icone.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.search-icon {
+    background-color: transparent;
+    border: none;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.mainboxes {
+    margin: 15px;
+    padding: 25px;
+    border-radius: 40px;
+    /* background-color: rgb(215, 215, 215); */
+}
+
+#filters {
+    margin-left: 110px;
+    margin-top: 110px;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lastParam {
+    border-top: 1px solid #666;
+    margin-top: 10px
+}
+
+#filters a {
+    text-decoration: none;
+}
+
+#filters p {
+    color: #444;
+    margin: 0;
+    padding: 15px;
+    border-radius: 1000px;
+    transition: 0.3s ease-in-out;
+}
+
+#filters p:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#gpts {
+    width: 65%;
+}
+
+#pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#gpt-extensions {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
+    list-style-type: none;
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+li:hover {
+    transform: scale(1.01);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio (9 / 16 * 100%) */
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.nom {}
+
+.nom h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.description {}
+
+.description p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #444;
+}
+
+.redirect {
+    position: absolute;
+    bottom: 0;
+}
+
+.redirect a {
+    text-decoration: none;
+    color: white;
+}
+
+.redirect p {
+    background-color: #0a6f57;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.redirect p:hover {
+    background-color: #07503f;
+}

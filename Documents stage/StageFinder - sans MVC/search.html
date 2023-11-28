@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search / Stage Finders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/image/logofull.png">
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <img src="./assets/image/logotop.png" alt="img-logo"
+                onClick="Javascript:window.location.href='homelogged.html';">
+        </div>
+        <div class="right">
+            <img src="./assets/image/search.png" alt="img-search"
+                onClick="Javascript:window.location.href='search.html';">
+            <img src="./assets/image/folder.png" alt="img-files"
+                onClick="Javascript:window.location.href='folder.html';">
+            <img src="./assets/image/profil.png" alt="img-profil"
+                onClick="Javascript:window.location.href='profil.html';">
+            <img src="./assets/image/menu.png" alt="img-menu" class="expand-menu" onclick="openMenu()">
+        </div>
+    </header>
+
+    <div id="sideMenuTuteur" class="sidemenututeur">
+        <ul>
+            <li><img src="./assets/image/cross.png" alt="img-close" class="close-menu" onclick="closeMenu()"></li>
+            <li><a href="#">Accueil </a></li>
+            <li><a href="#">Gestion Entreprise </a></li>
+            <li><a href="#">Gestion Elèves </a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <div class="filters">
+
+            <div class="filtre">
+                <input type="text" id="search" name="search" placeholder=" Recherche">
+
+                <hr>
+
+                <table cellspacing="0" cellpadding="0" id="click-menu1" class="click-menu">
+                    <tr>
+                        <td class="tablesearch">
+                            <div class="box1">Mineure <img id="img_1" src="./assets/image/fleche.png" width="15"
+                                    height="15" style="margin-top: 8px;" alt="fleche"></div>
+                            <div class="section">
+                                <div class="box2"><input type="checkbox" name="mineure">BTP </div>
+                                <div class="box2"><input type="checkbox" name="mineure">Généraliste </div>
+                                <div class="box2"><input type="checkbox" name="mineure">Informatique</div>
+                                <div class="box2"><input type="checkbox" name="mineure">S3E </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch" height="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch">
+                            <div class="box3">Niveau <img id="img_2" src="./assets/image/fleche.png" width=" 15"
+                                    height="15" style="margin-top: 8px;" alt="fleche"></div>
+                            <div class="section">
+                                <div class="box2"><input type="checkbox" name="niveau">A2</div>
+                                <div class="box2"><input type="checkbox" name="niveau">A3</div>
+                                <div class="box2"><input type="checkbox" name="niveau">A4</div>
+                                <div class="box2"><input type="checkbox" name="niveau">A5</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch" height="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch" class="tablesearch">
+                            <div class="box4">Ville <img id="img_3" src="./assets/image/fleche.png" width="15"
+                                    height="15" style="margin-top: 8px;" alt="fleche"></div>
+                            <div class="section">
+                                <div class="box2"><input type="text" name="ville" placeholder=" Nom de la ville"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch" height="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch">
+                            <div class="box5">Durée <img id="img_4" src="./assets/image/fleche.png" width="15"
+                                    height="15" style="margin-top: 8px;" alt="fleche"></div>
+                            <div class="section">
+                                <div class="box2"><input type="text" name="duree" placeholder=" Nombre de semaines">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch" height="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablesearch">
+                            <div class="box6">Urgence <img id="img_5" src="./assets/image/fleche.png" width="15"
+                                    height="15" style="margin-top: 8px;" alt="fleche"></div>
+                            <div class="section">
+                                <div class="box2"><input type="checkbox" name="urgence" value="Oui">OUI</div>
+                                <div class="box2"><input type="checkbox" name="urgence" value="Non">NON</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <input id="btn_filtre" type="submit" value="Appliquer les filtres"><br>
+                <a href="#">Réinitialiser</a>
+            </div>
+        </div>
+
+        <div class="annonces">
+
+            <div class="card">
+
+                <div class="column1_search">
+                    <h2>Entreprise </h2>
+                    <h4>Ville </h4>
+                    <p>Niveau | Durée </p>
+                </div>
+
+                <div class="column2_search">
+                    <h2>Nom offre </h2>
+                    <p>Détails de l'offre</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="toflex">
+            <img src="./assets/image/logo.png" alt="Logo Home">
+            <h1>Stage Finder</h1>
+            <div class="socialmedia">
+                <a
+                    href="https://www.facebook.com/CESIingenieurs/?_ga=2.193676973.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/fb.png" alt="facebook">
+                </a>
+                <a
+                    href="https://www.instagram.com/cesi_officiel/?_ga=2.125329674.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/insta.png" alt="instagram">
+                </a>
+                <a
+                    href="https://www.linkedin.com/school/cesi-officiel/?_ga=2.225568026.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/ln.png" alt="linkedin">
+                </a>
+                <a href="https://twitter.com/cesi_officiel?_ga=2.225568026.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/twi.png" alt="twitter">
+                </a>
+                <a
+                    href="https://www.youtube.com/user/groupecesi1/?_ga=2.225568026.1269075008.1679398788-760930028.1669196668">
+                    <img src="./assets/image/socialmedia/yt.png" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div class="footerlinks">
+            <a href="./mention_legales.html">MENTIONS</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./apropos.html">A PROPOS</a>
+            <a href="./cookie.html">COOKIES</a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+        var clickMenu1 = new ClickShowHideMenu('click-menu1');
+        clickMenu1.init();
+    </script>
+</body>
+
+</html>
